@@ -1,0 +1,363 @@
+
+
+.wealth-summary {
+  background-color: #fff3e0;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  // row-gap: 2rem;
+}
+
+.investments {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 15px;
+  flex: 1 1 calc(50% - 15px);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card.disabled {
+  background-color: #e0e0e0;
+  color: #999;
+}
+
+.wealth-summary-img {
+  width: 55%;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 35px;
+  box-sizing: border-box;
+  img {
+    // width: 90%;
+    // height: 250px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.main-content-right {
+  background-image: url(https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/8568a788-8dc9-4af7-b3c9-d64dd41271a7/ceef3b31-1f46-47f3-be48-1e6e883d8563.png);
+  width: 45%;
+  // height: 250px;
+  color: white;
+  border-radius: 0.5rem;
+  p {
+    text-align: start;
+    margin-left: 2rem;
+  }
+}
+
+.main-content {
+  display: flex;
+  gap: 23px;
+  margin-bottom: 28px;
+  height: 212px;
+}
+
+@media screen and (min-width: 551px) {
+  .main-content-bottom{
+    height: 388px;
+    padding: 25px 35px 0px 25px;
+  }
+}
+
+.main-content-bottom {
+  box-sizing: border-box;
+  display: flex;
+  padding:1.4rem;
+  // height: 388px;
+  border-radius: 10px;
+  // padding-bottom: 25px;
+  gap: 33px;
+  // width: 96%;
+  // justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 13px 11px #00000005;
+  hr {
+    opacity: 0.2;
+  }
+  padding-top: 30px;
+}
+
+.items {
+  width: 115px;
+  height: 97px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 1px 1px 6px 3px #0000000a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h3 {
+    opacity: 0.3;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: center;
+    margin: 0px;
+  }
+  p {
+    margin: 0px;
+    opacity: 0.4;
+    font-size: 10px;
+  }
+}
+
+.item1 {
+  border: 1px solid #f58024;
+  p {
+    opacity: 0.9 !important;
+    font-weight: 700;
+    font-family: "Lato";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+.list {
+  display: flex;
+  width: 100%;
+  height: 65px;
+  border-bottom: 1px solid #E0E0E0;
+  justify-content: space-between;
+  .listnames {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    img {
+      width: 50px;
+      height: 52px;
+    }
+    h3 {
+      font-family: "Lato";
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16.8px;
+      opacity: 0.9;
+    }
+  }
+  .lists {
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+
+.middlelist {
+  // width: 50%;
+  flex: 1;
+  // margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.flag {
+  display: flex;
+  flex-direction: column;
+  .flag-img {
+    width: 17.5px;
+    height: 20px;
+  }
+}
+
+.bottomlist {
+  width: 21%;
+}
+
+.lists_values {
+  font-weight: 700;
+  font-family: "Lato";
+  font-size: 14px;
+  p {
+    margin-bottom: 1px;
+  }
+}
+
+.list_data {
+  color: #63bf97;
+  font-weight: 400;
+  font-size: 12px;
+}
+.main-content-top {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.responsive_header {
+  display: flex;
+  height: 107px;
+  align-items: center;
+  width: 100%;
+  justify-content: end;
+}
+
+.responsive_wealth{
+  display: none;
+  border-radius: 0px;
+}
+
+@media screen and (max-width: 550px) {
+  .main-content-right {
+    display: none;
+  }
+  .main-content-bottom {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content-top {
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+  }
+  .bottomlist {
+    width: 100%;
+  }
+
+  .middlelist {
+    width: 100%;
+  }
+
+  .main-container {
+    width: 100%;
+    row-gap: 0.5rem;
+  }
+  .wealth-summary-img {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .responsive_header {
+    display: none;
+  }
+  .img {
+    float: right;
+    transform: translateY(-40px);
+  }
+
+  .img1{
+    width: 200px;
+    height: 200px;
+  }
+
+  .responsive_wealth{
+    position: relative;
+    display: block;
+    height: 65px;
+    border-radius: 10px;
+    height: 106px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .wealth-summary-img{
+     background-color:none !important;
+     background:none !important;
+
+  }
+
+
+}
+
+.wealth-summary-img{
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Lato;
+  border-radius: 10px;
+   opacity: 0.8;
+   background: linear-gradient(127deg, #FFF 15.82%, rgba(255, 255, 255, 0.78) 34.32%, #FFF 51.28%, rgba(255, 255, 255, 0.72) 70.77%, #FFF 89.44%);
+   background-color: #ffd28d;
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+    .title {
+      font-family: Lato;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 700;
+    }
+  
+    .members {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      color:#333333;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      span.numbers{
+        color:#000000;
+        font-size: 18px;
+        font-weight: 900;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .wealth-amount {
+    color: #000;
+font-feature-settings: 'liga' off, 'clig' off;
+/* H2 Bold */
+font-family: Lato;
+font-size: 34px;
+font-style: normal;
+font-weight: 700;
+  }
+  
+  .card-content {
+    .details {
+      display: flex;
+      gap: 52px;
+      margin-top: 33px;
+  
+      .invested, .gain-loss {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        gap: 7px;
+        .label {
+          color: #FF7101;
+          font-feature-settings: 'liga' off, 'clig' off;
+          font-family: Lato;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400; // Orange color for labels
+        }
+  
+        .value {
+          font-feature-settings: 'liga' off, 'clig' off;
+          font-family: Lato;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          color:#000000;
+        }
+      }
+    }
+  }
+}

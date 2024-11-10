@@ -1,0 +1,159 @@
+
+
+@media screen and (max-width: 550px) {
+ .sidebar{
+  width: 100% !important;
+  box-sizing: border-box;
+  overflow: hidden;
+ }
+ 
+}
+.sidebar {
+  background-color: #ffffff;
+  // padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  width: 253px;
+  // row-gap: 45px;
+}
+
+.sidebar-menu {
+  display: flex;
+  // justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+  // justify-content: center;
+}
+
+
+
+.sidebar-actions{
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  margin-top: 47px;
+}
+
+.sidebar-menu img {
+  margin-left: 3rem;
+
+}
+
+
+
+@media screen and (min-width: 551px) {
+  .hr-line{
+    margin: 34px 28px 0px 28px;
+    height: 0.5px;
+    background: #E0E0E0;
+  }
+
+  .profile {
+    margin-top: 65px !important;
+    text-align: center;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 25px !important;
+    padding-bottom: 79px !important;
+  }
+}
+
+
+
+
+.menu {
+  color: #00000080;
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  width: 158px;
+  height: 16px;
+}
+.active{
+  color: #000000;
+}
+.icon {
+  margin-right: 10px;
+}
+
+.profile {
+  text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+}
+
+
+
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.btn {
+  border: none;
+  width: 89px;
+  height: 26px;
+  margin-left: 82px;
+  margin-top: 30px;
+  background-color: #d9d9d9;
+}
+
+.profile-top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.profile-top img {
+  margin: auto;
+}
+
+
+@media screen and (max-width: 550px) {
+  .logo{
+    display: none;
+  }
+  .sidebar {
+    row-gap: 0.5rem;
+    padding: 0.5rem;
+    background-color: #fff4e9;
+    
+  }
+
+  .sidebar-menu {
+    display: none;
+  }
+
+  .menu {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .btn {
+    width: 40px;
+    height: 26px;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+
+  .profile-bottom {
+    display: none; 
+  }
+
+  .profile {
+    width: 100vw;
+  }
+
+
+  .profile-img {
+    width: 67px;
+    height: 67px;
+  }
+}
